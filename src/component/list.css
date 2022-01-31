@@ -1,0 +1,72 @@
+.listPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1890ff;
+    padding: 20px;
+    min-height: 100vh;
+    /* width: 100%; */
+}
+.tableBox{
+    max-width: 800px;
+     background-color: white;
+     padding: 10px;
+     border-radius: 10px;
+     width: 100%;
+     position: relative;
+    
+     box-shadow: 0px 0px 7px -3px black;
+    }
+    .singlePost{
+        position: relative;
+    }
+
+    .singlePost .dateImage{
+        display: flex;
+        /* align-items: center; */
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+    .singlePost .date{
+        text-align: right;
+    }
+
+    .singlePost .data{
+        padding:  0px 10px;
+    }
+
+    .singlePost .inputDiv{
+        margin: 10px 0px;
+    }
+
+    .loader{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.693);
+        /* opacity: 0.4; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .singlePost p {
+        margin: 0px;
+    }
+
+
+    .addPostButton{
+        width: 80%;
+        background: #1890ff;
+        border: none;
+        color: white;
+        font-weight: bold;
+    }
+    .logOut{
+        width: 20%;
+        background: red;
+        border: red;
+        font-weight: bold;
+        color: white;
+    }
