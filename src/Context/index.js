@@ -8,9 +8,7 @@ export const withAppContext = (Component) => (props) =>
 const AppProvider = ({ children }) => {
 	const [logError, setLogError] = useState(false);
 	const [loading, setLoading] = useState(false);
-	const [token, setToken] = useState(() => {
-		return localStorage.getItem('token')
-	})
+
 	const onFinish = (values, props) => {
 		setLoading(true);
 		// var axios = require('axios');
@@ -20,7 +18,7 @@ const AppProvider = ({ children }) => {
 			method: "post",
 			url: "https://api-ela-test.herokuapp.com/login",
 			headers: {
-				'Authorization': `Bearer ${token}`
+				"Content-Type": "application/json"
 			},
 			data: data
 		};
